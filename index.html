@@ -1,14 +1,62 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>GIF Gala</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>GIF Gala RSVP</title>
 </head>
 
 <body>
-    <h1>Hello world</h1>
-    <script src="script.js"></script>
+
+    <!-- Invitation header -->
+    <header>
+        <h1>You're Invited to the GIF Gala: Where Memes Come to Life!</h1>
+        <!-- Subheading -->
+        <h2>7/21/23</h2>
+    </header>
+
+    <!-- Short description of Gif Gala -->
+    <section>
+        <p>Welcome to the most epic Gif Gala where memes transcend the digital realm and come to life! Join us for a
+            night of laughter, fun, and living memes. Dress as your favorite GIF or meme and be ready to dance the night
+            away!</p>
+    </section>
+    <section id="confirmationMessage" class="hidden">
+        <p></p>
+    </section>
+
+
+    <!-- RSVP Form -->
+    <section>
+        <form id="rsvpForm">
+            <!-- Email field -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Attendance field -->
+            <div>
+                <label for="attendance">Will you attend?</label>
+                <select id="attendance" name="attendance" required>
+                    <option value="" disabled selected>Select One</option>
+                    <option value="yes">Yes, I'll be there!</option>
+                    <option value="no">Sorry, can't make it.</option>
+                </select>
+            </div>
+
+            <!-- Submit button -->
+            <div>
+                <button type="submit">Submit RSVP</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Confirmation message space -->
+
 </body>
 
 </html>
